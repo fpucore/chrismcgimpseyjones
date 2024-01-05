@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap" rel="stylesheet">
 
-	<!-- China Site 4 access token prompt-->
+	<!-- China Site 4 access token prompt -->
 <script language="JavaScript">
 var password; 
 var pass1="SWbUlV15"; 
@@ -52,10 +52,87 @@ else { window.location="https://www.theamazingchina.world";
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;}
+
+ 
+    .context-menu { 
+        position: absolute; 
+        text-align: center; 
+        background: lightgray; 
+        border: 1px solid black; 
+    } 
+  
+    .context-menu ul { 
+        padding: 0px; 
+        margin: 0px; 
+        min-width: 150px; 
+        list-style: none; 
+    } 
+  
+    .context-menu ul li { 
+        padding-bottom: 7px; 
+        padding-top: 7px; 
+        border: 1px solid black; 
+    } 
+  
+    .context-menu ul li a { 
+        text-decoration: none; 
+        color: black; 
+    } 
+  
+    .context-menu ul li:hover { 
+        background: darkgray; 
+    } 
+
 </style>
 </head>
 
-<body oncontextmenu="return false;">
+<body>
+
+	<script type="text/javascript">
+        document.oncontextmenu = rightClick;
+
+        function rightClick(clickEvent) {
+            clickEvent.preventDefault();
+            // return false;
+        }
+    </script>
+
+    <script> 
+    document.onclick = hideMenu; 
+    document.oncontextmenu = rightClick; 
+      
+    function hideMenu() { 
+        document.getElementById("contextMenu") 
+                .style.display = "none" 
+    } 
+  
+    function rightClick(e) { 
+        e.preventDefault(); 
+  
+        if (document.getElementById("contextMenu") 
+                .style.display == "block") 
+            hideMenu(); 
+        else{ 
+            var menu = document.getElementById("contextMenu") 
+  
+            menu.style.display = 'block'; 
+            menu.style.left = e.pageX + "px"; 
+            menu.style.top = e.pageY + "px"; 
+        } 
+    } 
+</script> 
+
+    <div id="contextMenu" class="context-menu" 
+    style="display: none"> 
+    <ul>
+	    <li><strong>&nbsp;LINKS MENU&nbsp;</strong></li>
+	<li><a href="https://www.qanonsec.com">&nbsp;QANONSEC&nbsp;</a></li>
+        <li><a href="https://www.qanonsecsecuresearch.lol">&nbsp;#QANONSEC secure search&nbsp;</a></li> 
+        <li><a href="https://www.qanonsec.com/chan">&nbsp;Q-CHAN&nbsp;</a></li> 
+        <li><a href="https://www.4chan.org">&nbsp;4chan&nbsp;</a></li> 
+        <li><a href="https://www.8kun.top">&nbsp;8kun&nbsp;</a></li>  
+    </ul> 
+</div>
 
 <div class="main">
 	<font color="white">
@@ -157,7 +234,21 @@ else { window.location="https://www.theamazingchina.world";
 
 <br>
 	<div align="left" style="font-size:60%">
-			<!-- bio information -->
+			<!-- bio information 1 -->
+		Q-CHAN Administrator > <a href="https://www.qanonsec.com/chan" style="color:brown; text-decoration:none">https://www.qanonsec.com/chan</a><br>
+
+		<br>
+
+			<!-- bio information 2 -->
+		Creator of the 4chan and 8kun Android apps:<br>
+		<ul style="list-style: none;">
+			<li><a href="http://www.gcmediapublishingmanagement.website/public/third-party/files/4chan_webapp_v1.0_build1.0.apk" style="color:brown; text-decoration:none">4chan app v1.0</a></li>
+			<li><a href="http://www.gcmediapublishingmanagement.website/public/third-party/files/8kun_webapp_v1.0_build1.0.apk" style="color:brown; text-decoration:none">8kun app v1.0</a></li>
+		</ul>
+		
+		<br>
+
+			<!-- bio information 3 -->
 		Unixmen alumnus :: Pirate Party alumnus :: Australian Republic Movement member<br>
 		Freedom Publishers Union Co-Founder :: Cicada 3301 (AU) custodian<br>
 <br>
@@ -198,7 +289,7 @@ else { window.location="https://www.theamazingchina.world";
 		<li><a href="https://www.cicada3301official.com/pages/team.html" style="color:brown; text-decoration:none">Cicada 3301 Official</a></li>
 	</ul>
 <br>
-		I am the administrator of Freedom Publishers Union.</br>
+		I am the Administrator of Freedom Publishers Union.</br>
 	<ul style="list-style: none;">
 		<li><a href="https://www.freedompublishersunion.net" style="color:brown; text-decoration:none">Freedom Publishers Union</a></li>
 	</ul>
@@ -268,7 +359,7 @@ else { window.location="https://www.theamazingchina.world";
 		through Forward Thinking Australia.<br>
 <br>		
 		I promote Buddhism through the Buddhist Technologist Alliance > <!-- continue on new line to avoid wrap -->
-			<a href="https://www.buddhisttechnologistalliance.net" style="color:brown; text-decoration:none">www.buddhisttechnologistalliance.net</a><br>
+			<a href="http://www.gcmediapublishingmanagement.website/buddhisttechnologistalliance" style="color:brown; text-decoration:none">www.gcmediapublishingmanagement.website/buddhisttechnologistalliance</a><br>
 		<br>
 		I founded Koala Aware to promote awareness for protection of koalas and their habitat.
 	</div>
